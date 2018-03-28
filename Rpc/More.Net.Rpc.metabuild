@@ -1,0 +1,21 @@
+CSharpProject More.Net.Rpc
+OutputType Library
+ProjectGuid 7022BDB0-9155-4FA0-B000-A6CF238498FE
+Reference System
+ProjectReference More.Core
+ProjectReference More.CompactFrameworkBridge
+ProjectReference More.Net
+ProjectReference More.Reflection
+
+Source Properties\AssemblyInfo.cs
+Source RecordBuilder.cs
+Source RpcPerformance.cs
+Source RpcAuthentication.cs
+Source RpcCall.cs
+Source RpcTcpClientConnection.cs
+Source RpcMessage.cs
+Source RpcProcedure.cs
+Source RpcProcedureMap.cs
+Source RpcReply.cs
+Source RpcServerHandler.cs
+Source Xdr.cs

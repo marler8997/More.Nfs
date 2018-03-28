@@ -1,0 +1,27 @@
+
+Mapping {
+   UInt32 program
+   UInt32 version
+   UInt32 protocol
+   UInt32 port
+}
+
+GetPortReply {
+   UInt32 port
+}
+
+#MappingEntry {
+#   Mapping mapping
+#   UInt32 haveNextMapping {
+#      case 0 {
+#      }
+#      default {
+#         MappingEntry nextEntry
+#      }
+#   }
+#}
+
+#DumpReply {
+#   Boolean haveMappingList
+#   MappingEntry mappingList
+#}

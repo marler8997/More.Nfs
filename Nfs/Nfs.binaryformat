@@ -1,0 +1,87 @@
+
+
+Enum UInt32 FileType {
+    Regular         1
+    Directory       2
+    BlockDevice     3
+    CharacterDevice 4
+    SymbolicLink    5
+    Socket          6
+    NamedPipe       7
+}
+Flags UInt32 ModeFlags {
+     0 OtherExecute
+     1 OtherWrite
+     2 OtherRead
+     3 GroupExecute
+     4 GroupWrite
+     5 GroupRead
+     6 OwnerExecute
+     7 OwnerWrite
+     8 OwnerRead
+     9 SaveSwappedText
+    10 SetGidOnExec
+    11 SetUidOnExec
+    12 UnknownFlag1
+    13 UnknownFlag2
+    14 UnknownFlag3
+    15 UnknownFlag4
+}
+Enum UInt32 More.Net.Nfs3Procedure.Status {
+    Ok                               0
+    ErrorPermission                  1
+    ErrorNoSuchFileOrDirectory       2
+    ErrorIOHard                      5
+    ErrorIONoSuchDeviceOrAddress     6
+    ErrorAccess                     13
+    ErrorAlreadyExists              17
+    ErrorCrossLinkDevice            18
+    ErrorNoSuchDevice               19
+    ErrorNotDirectory               20
+    ErrorIsDirectory                21
+    ErrorInvalidArgument            22
+    ErrorFileTooBig                 27
+    ErrorNoSpaceLeftOnDevice        28
+    ErrorReadOnlyFileSystem         30
+    ErrorToManyHardLinks            31
+    ErrorNameTooLong                63
+    ErrorDirectoryNotEmpty          66
+    ErrorUserQuotaExceeded          69
+    ErrorStaleFileHandle            70
+    ErrorTooManyRemoteLevels        71
+    ErrorBadHandle               10001
+    ErrorNotSynchronized         10002
+    ErrorBadCookie               10003
+    ErrorNotSupported            10004
+    ErrorTooSmall                10005
+    ErrorServerFault             10006
+    ErrorBadType                 10007
+    ErrorJukeBox                 10008
+}
+ 
+Time {
+   UInt32 seconds
+   UInt32 nanoseconds
+}
+
+SizeAndTimes {
+   UInt64 fileSize
+   Time lastModifyTime
+   Time lastAttributeModifyTime
+}
+FileAttributes {
+   FileType fileType
+   ModeFlags protectionMode
+   UInt32 hardLinks
+   UInt32 ownerUid
+   UInt32 gid
+   UInt64 fileSize
+   UInt64 diskSize
+   UInt32 specialData1
+   UInt32 specialData2
+   UInt64 fileSystemID
+   UInt64 fileID
+   Time lastAccessTime
+   Time lastModifyTime
+   Time lastAttributeModifyTime
+}

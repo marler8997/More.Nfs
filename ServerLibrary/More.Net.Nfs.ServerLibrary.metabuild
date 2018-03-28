@@ -1,0 +1,28 @@
+CSharpProject More.Net.Nfs.ServerLibrary
+OutputType Library
+AllowUnsafeBlocks
+ProjectGuid 4E844E6B-37B0-4FD1-829C-DBC488C164E1
+Reference System
+ProjectReference More.Core
+ProjectReference More.Core.Common
+ProjectReference More.CompactFrameworkBridge
+ProjectReference More.Collections
+ProjectReference More.Platform
+ProjectReference More.Reflection
+ProjectReference More.Net
+ProjectReference More.Net.Rpc
+ProjectReference More.Net.Nfs
+
+Source Properties\AssemblyInfo.cs
+Source ControlServer.cs
+Source IFileIDDictionary.cs
+Source IPermissions.cs
+Source JediTimer.cs
+Source Mount1And3Server.cs
+Source Nfs3Server.cs
+Source NfsServerLog.cs
+Source NpcClasses.cs
+Source PortMap2Server.cs
+Source RpcServicesManager.cs
+Source SharedFileSystem.cs
+Source ShareObject.cs

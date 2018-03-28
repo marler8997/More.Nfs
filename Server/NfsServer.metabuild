@@ -1,0 +1,16 @@
+CSharpProject NfsServer
+OutputType Exe
+ProjectGuid C92FA8B0-E5A5-4A36-B026-B87F446AD09D
+Reference System
+ProjectReference More.Core
+ProjectReference More.CompactFrameworkBridge
+ProjectReference More.Collections
+ProjectReference More.Config
+ProjectReference More.Platform
+ProjectReference More.Net
+ProjectReference More.Net.Rpc
+ProjectReference More.Net.Nfs
+ProjectReference More.Net.Nfs.ServerLibrary
+
+Source Properties\AssemblyInfo.cs
+Source NfsServerProgram.cs
